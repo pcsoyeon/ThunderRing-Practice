@@ -1,2 +1,2 @@
 # ThunderRing-Practice
-⚡️ThunderRing-With-YangPaRingGirls⚡️
+⚡️ThunderRing With Yang-Pa-Ring-Girls⚡️
