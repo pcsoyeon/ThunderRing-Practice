@@ -14,13 +14,12 @@ class TabBarController: UITabBarController {
         
         UITabBar.appearance().tintColor = .systemBlue
         
-        let mainTab =  UINavigationController(rootViewController: ViewController())
-        mainTab.tabBarItem = UITabBarItem(title: "투데이", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
+        let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let mainTab = mainStoryboard.instantiateViewController(identifier: "NaviController")
         
         let tabs =  [mainTab]
         
         setViewControllers(tabs, animated: false)
         selectedViewController = mainTab
     }
-    
 }
