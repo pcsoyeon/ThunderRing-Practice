@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  PushNotification
+//  LocalNotification
 //
-//  Created by soyeon on 2021/10/16.
+//  Created by soyeon on 2021/10/19.
 //
 
 import UIKit
