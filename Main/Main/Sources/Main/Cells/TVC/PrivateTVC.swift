@@ -29,6 +29,7 @@ class PrivateTVC: UITableViewCell {
         super.awakeFromNib()
         
         initUI()
+        setCollectionView()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -53,25 +54,47 @@ extension PrivateTVC {
         seeAllButton.layer.cornerRadius = 15
         seeAllButton.layer.masksToBounds = true
         seeAllButton.addAction(UIAction(handler: { _ in
-            NotificationCenter.default.post(name: NSNotification.Name("touchUpSeeAll"), object: nil)
+            // 전체 보기 버튼 눌렀을 때
+            
         }), for: .touchUpInside)
     }
     
     func setCollectionView() {
+        let nib = UINib(nibName: PrivateCVC.identifier, bundle: nil)
+        groupCollectionView.register(nib, forCellWithReuseIdentifier: PrivateCVC.identifier)
         
+        groupCollectionView.delegate = self
+        groupCollectionView.dataSource = self
     }
 }
 
 extension PrivateTVC: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellWidth = groupCollectionView.frame.width - 25 - 51 - 9
+        let cellHeight = groupCollectionView.frame.height - 40
+        return CGSize(width: cellWidth, height: cellHeight)
+    }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 9
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 5, left: 25, bottom: 5, right: 25)
+    }
 }
 
 extension PrivateTVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PrivateCVC.identifier, for: indexPath) as? PrivateCVC else { return UICollectionViewCell() }
+        return cell
     }
 }

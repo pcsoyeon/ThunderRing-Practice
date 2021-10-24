@@ -7,12 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainVC: UIViewController {
     
     // MARK: - IB Outlets
     
     @IBOutlet weak var groupListTV: UITableView!
-    @IBOutlet weak var topView: UIView!
     
     // MARK: - Life Cycle
     
@@ -20,24 +19,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         initUI()
+        
         setTableView()
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(touchUpSeeAll(_:)), name: NSNotification.Name("touchUpSeeAll"), object: nil)
-    }
-    
-    @objc
-    func touchUpSeeAll(_ notification: Notification) {
-        
+        setNavi()
     }
 }
 
-extension ViewController {
+extension MainVC {
     func initUI() {
         view.backgroundColor = .white
-        
-        topView.backgroundColor = .systemPurple
-        topView.layer.cornerRadius = 10
-        topView.layer.masksToBounds = true
     }
     
     func setTableView() {
@@ -50,15 +40,30 @@ extension ViewController {
         let publicNib = UINib(nibName: PublicTVC.identifier, bundle: nil)
         groupListTV.register(publicNib, forCellReuseIdentifier: PublicTVC.identifier)
     }
+    
+    func setNavi() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "번개", style: .plain, target: self, action: #selector(touchUpThunder))
+    }
 }
 
-extension ViewController: UITableViewDelegate {
+extension MainVC {
+    @objc
+    func touchUpThunder() {
+        print("모집 중인 번개")
+    }
+}
+
+// MARK: - TableView Delegate
+
+extension MainVC: UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
+            return 150
+        } else if indexPath.section == 1 {
             return 400
         } else {
             return 600
@@ -66,13 +71,17 @@ extension ViewController: UITableViewDelegate {
     }
 }
 
-extension ViewController: UITableViewDataSource {
+// MARK: - TableView DataSource
+
+extension MainVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
+            return UITableViewCell()
+        } else if indexPath.section == 1 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PrivateTVC.identifier) as? PrivateTVC else {
                 return UITableViewCell()
             }

@@ -35,7 +35,7 @@
                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                     </button>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9y1-9H-dn4">
-                        <rect key="frame" x="0.0" y="71" width="375" height="279"/>
+                        <rect key="frame" x="0.0" y="65" width="375" height="285"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GYj-7b-tas">
                             <size key="itemSize" width="128" height="128"/>
@@ -55,7 +55,7 @@
                     <constraint firstItem="9y1-9H-dn4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="l7A-MJ-OZs"/>
                     <constraint firstAttribute="bottom" secondItem="9y1-9H-dn4" secondAttribute="bottom" id="ljI-X5-6J3"/>
                     <constraint firstAttribute="trailing" secondItem="NrC-Hs-y4f" secondAttribute="trailing" constant="20" id="rts-4s-6mH"/>
-                    <constraint firstItem="9y1-9H-dn4" firstAttribute="top" secondItem="NrC-Hs-y4f" secondAttribute="bottom" constant="20" id="wl5-VV-wz0"/>
+                    <constraint firstItem="9y1-9H-dn4" firstAttribute="top" secondItem="NrC-Hs-y4f" secondAttribute="bottom" constant="14" id="wl5-VV-wz0"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -65,7 +65,7 @@
                 <outlet property="seeAllButton" destination="NrC-Hs-y4f" id="Iun-Va-d7m"/>
                 <outlet property="titleLabel" destination="HA8-ub-a5b" id="HWO-4i-fUS"/>
             </connections>
-            <point key="canvasLocation" x="185" y="136"/>
+            <point key="canvasLocation" x="184.78260869565219" y="135.9375"/>
         </tableViewCell>
     </objects>
     <resources>
