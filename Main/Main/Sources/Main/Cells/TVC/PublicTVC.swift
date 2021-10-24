@@ -1,14 +1,14 @@
 //
-//  PrivateTVC.swift
+//  PublicTVC.swift
 //  Main
 //
-//  Created by soyeon on 2021/10/18.
+//  Created by soyeon on 2021/10/19.
 //
 
 import UIKit
 
-class PrivateTVC: UITableViewCell {
-    static let identifier = "PrivateTVC"
+class PublicTVC: UITableViewCell {
+    static let identifier = "PublicTVC"
 
     override func awakeFromNib() {
         super.awakeFromNib()
