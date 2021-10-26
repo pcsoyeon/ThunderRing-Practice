@@ -43,6 +43,10 @@ extension PrivateCVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableView.frame.height / 2
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("cell selected")
+    }
 }
 
 extension PrivateCVC: UITableViewDataSource {

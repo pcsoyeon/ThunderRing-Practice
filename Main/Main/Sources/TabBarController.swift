@@ -20,10 +20,7 @@ class TabBarController: UITabBarController {
         let mainTab = mainStoryboard.instantiateViewController(identifier: "NaviController")
         mainTab.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
         
-        let otherTab = CreateThunderVC()
-        otherTab.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "heart"), selectedImage: UIImage(systemName: "heart.fill"))
-        
-        let tabs =  [mainTab, otherTab]
+        let tabs =  [mainTab]
         
         setViewControllers(tabs, animated: false)
         selectedViewController = mainTab
