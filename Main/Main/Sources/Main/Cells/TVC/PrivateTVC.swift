@@ -23,6 +23,8 @@ class PrivateTVC: UITableViewCell {
     
     private var count = 0
     
+    var cellDelegate: CellDelegate?
+    
     // MARK: - Life Cycle
     
     override func awakeFromNib() {
@@ -54,8 +56,9 @@ extension PrivateTVC {
         seeAllButton.layer.cornerRadius = 15
         seeAllButton.layer.masksToBounds = true
         seeAllButton.addAction(UIAction(handler: { _ in
-            // 전체 보기 버튼 눌렀을 때
-            
+//            NotificationCenter.default.post(name: NSNotification.Name("TouchUoSeeAll"), object: nil)
+            let dvc = GroupListVC()
+            self.cellDelegate?.touchUpSeeAll(dvc: dvc)
         }), for: .touchUpInside)
     }
     

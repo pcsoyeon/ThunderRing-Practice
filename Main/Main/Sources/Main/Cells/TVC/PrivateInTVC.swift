@@ -10,6 +10,12 @@ import UIKit
 class PrivateInTVC: UITableViewCell {
     static let identifier = "PrivateInTVC"
 
+    // MARK: - IB Outlets
+    
+    @IBOutlet weak var createButton: UIButton!
+    
+    // MARK: - Life Cycle
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -23,6 +29,9 @@ class PrivateInTVC: UITableViewCell {
 
 extension PrivateInTVC {
     func initUI() {
-        
+        createButton.setTitle("번개 보내기", for: .normal)
+        createButton.addAction(UIAction(handler: { _ in
+            NotificationCenter.default.post(name: NSNotification.Name("TouchUpCreateThunder"), object: nil)
+        }), for: .touchUpInside)
     }
 }

@@ -23,6 +23,8 @@
 		9296D3D6271D5CF4001B59EB /* PrivateTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9296D3D4271D5CF4001B59EB /* PrivateTVC.xib */; };
 		9296D3D8271D5DB0001B59EB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9296D3D7271D5DB0001B59EB /* TabBarController.swift */; };
 		9296D3DA271D5E69001B59EB /* NaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9296D3D9271D5E69001B59EB /* NaviController.swift */; };
+		929C1A922727F81900741622 /* GroupListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C1A912727F81900741622 /* GroupListVC.swift */; };
+		929C1A972727FCDB00741622 /* CellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C1A962727FCDB00741622 /* CellDelegate.swift */; };
 		92B6B42627252B330066A06B /* PrivateCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B6B42427252B330066A06B /* PrivateCVC.swift */; };
 		92B6B42727252B330066A06B /* PrivateCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B6B42527252B330066A06B /* PrivateCVC.xib */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,8 @@
 		9296D3D4271D5CF4001B59EB /* PrivateTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivateTVC.xib; sourceTree = "<group>"; };
 		9296D3D7271D5DB0001B59EB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9296D3D9271D5E69001B59EB /* NaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviController.swift; sourceTree = "<group>"; };
+		929C1A912727F81900741622 /* GroupListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListVC.swift; sourceTree = "<group>"; };
+		929C1A962727FCDB00741622 /* CellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDelegate.swift; sourceTree = "<group>"; };
 		92B6B42427252B330066A06B /* PrivateCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateCVC.swift; sourceTree = "<group>"; };
 		92B6B42527252B330066A06B /* PrivateCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivateCVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +92,22 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		929C1A902727F7FA00741622 /* GroupList */ = {
+			isa = PBXGroup;
+			children = (
+				929C1A912727F81900741622 /* GroupListVC.swift */,
+			);
+			path = GroupList;
+			sourceTree = "<group>";
+		};
+		929C1A952727FCBE00741622 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				929C1A962727FCDB00741622 /* CellDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		92B6B42827252CCC0066A06B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +123,7 @@
 			children = (
 				9296D3D7271D5DB0001B59EB /* TabBarController.swift */,
 				9296D3D9271D5E69001B59EB /* NaviController.swift */,
+				929C1A902727F7FA00741622 /* GroupList */,
 				92B6B43427252E1E0066A06B /* CreateThunder */,
 				92B6B42B27252D050066A06B /* Main */,
 			);
@@ -137,6 +158,7 @@
 		92B6B42D27252D2A0066A06B /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				929C1A952727FCBE00741622 /* Classes */,
 				92B6B43327252DE90066A06B /* Extensions */,
 				92B6B42E27252D340066A06B /* Supports */,
 			);
@@ -288,9 +310,11 @@
 				9228A1CE2725978D00A3941D /* PrivateInTVC.swift in Sources */,
 				9296D3DA271D5E69001B59EB /* NaviController.swift in Sources */,
 				9296D3C0271D5BC8001B59EB /* AppDelegate.swift in Sources */,
+				929C1A922727F81900741622 /* GroupListVC.swift in Sources */,
 				92572C292720710300719D54 /* CreateThunderVC.swift in Sources */,
 				9296D3C2271D5BC8001B59EB /* SceneDelegate.swift in Sources */,
 				927EEEBB271ED9D700643DBE /* CALayer+.swift in Sources */,
+				929C1A972727FCDB00741622 /* CellDelegate.swift in Sources */,
 				9296D3D8271D5DB0001B59EB /* TabBarController.swift in Sources */,
 				9296D3D5271D5CF4001B59EB /* PrivateTVC.swift in Sources */,
 			);

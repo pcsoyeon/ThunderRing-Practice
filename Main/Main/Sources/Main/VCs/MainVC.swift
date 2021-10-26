@@ -22,6 +22,7 @@ class MainVC: UIViewController {
         
         setTableView()
         setNavi()
+        getNotification()
     }
 }
 
@@ -44,12 +45,30 @@ extension MainVC {
     func setNavi() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "번개", style: .plain, target: self, action: #selector(touchUpThunder))
     }
+    
+    func getNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(touchUpCreateThunder(_:)), name: NSNotification.Name("TouchUpCreateThunder"), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(touchUpSeeAll(_:)), name: NSNotification.Name("TouchUoSeeAll"), object: nil)
+    }
 }
 
 extension MainVC {
     @objc
     func touchUpThunder() {
         print("모집 중인 번개")
+    }
+    
+    @objc
+    func touchUpCreateThunder(_ notification: Notification) {
+        let dvc = CreateThunderVC()
+        present(dvc, animated: true, completion: nil)
+    }
+    
+    @objc
+    func touchUpSeeAll(_ notification: Notification) {
+        let dvc = GroupListVC()
+        self.navigationController?.pushViewController(dvc, animated: true)
     }
 }
 
@@ -85,6 +104,7 @@ extension MainVC: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PrivateTVC.identifier) as? PrivateTVC else {
                 return UITableViewCell()
             }
+            cell.cellDelegate = self
             return cell
         } else {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PublicTVC.identifier) as? PublicTVC else {
@@ -95,4 +115,8 @@ extension MainVC: UITableViewDataSource {
     }
 }
 
-
+extension MainVC: CellDelegate {
+    func touchUpSeeAll(dvc: GroupListVC) {
+        self.navigationController?.pushViewController(dvc, animated: true)
+    }
+}
