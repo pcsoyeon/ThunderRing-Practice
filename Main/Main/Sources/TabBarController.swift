@@ -12,6 +12,8 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.delegate = self
+        
         UITabBar.appearance().tintColor = .systemPurple
         UITabBar.clearShadow()
         tabBar.layer.applyShadow(color: .gray, alpha: 0.3, x: 0, y: 0, blur: 12)
@@ -20,7 +22,13 @@ class TabBarController: UITabBarController {
         let mainTab = mainStoryboard.instantiateViewController(identifier: "NaviController")
         mainTab.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
         
-        let tabs =  [mainTab]
+        let thunderTab = CreateThunderVC()
+        thunderTab.tabBarItem = UITabBarItem(title: "번개", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
+        
+        let otherTab = OtherVC()
+        otherTab.tabBarItem = UITabBarItem(title: "other", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
+        
+        let tabs =  [mainTab, thunderTab, otherTab]
         
         setViewControllers(tabs, animated: false)
         selectedViewController = mainTab
@@ -36,6 +44,18 @@ class TabBarController: UITabBarController {
         itemAnimator.startAnimation()
     }
     
+}
+
+extension TabBarController: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        if viewController is CreateThunderVC {
+            let dvc = CreateThunderVC()
+            dvc.modalPresentationStyle = .fullScreen
+            tabBarController.present(dvc, animated: true, completion: nil)
+            return false
+        }
+        return true
+    }
 }
 
 extension UITabBar {
