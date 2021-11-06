@@ -27,6 +27,8 @@
 		929C1A972727FCDB00741622 /* CellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C1A962727FCDB00741622 /* CellDelegate.swift */; };
 		92B6B42627252B330066A06B /* PrivateCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B6B42427252B330066A06B /* PrivateCVC.swift */; };
 		92B6B42727252B330066A06B /* PrivateCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B6B42527252B330066A06B /* PrivateCVC.xib */; };
+		92D5C7EA2736724100F07EE5 /* OtherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D5C7E92736724100F07EE5 /* OtherVC.swift */; };
+		92D5C7EC273675D100F07EE5 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D5C7EB273675D100F07EE5 /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		929C1A962727FCDB00741622 /* CellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDelegate.swift; sourceTree = "<group>"; };
 		92B6B42427252B330066A06B /* PrivateCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateCVC.swift; sourceTree = "<group>"; };
 		92B6B42527252B330066A06B /* PrivateCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivateCVC.xib; sourceTree = "<group>"; };
+		92D5C7E92736724100F07EE5 /* OtherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVC.swift; sourceTree = "<group>"; };
+		92D5C7EB273675D100F07EE5 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 			children = (
 				9296D3D7271D5DB0001B59EB /* TabBarController.swift */,
 				9296D3D9271D5E69001B59EB /* NaviController.swift */,
+				92D5C7E92736724100F07EE5 /* OtherVC.swift */,
 				929C1A902727F7FA00741622 /* GroupList */,
 				92B6B43427252E1E0066A06B /* CreateThunder */,
 				92B6B42B27252D050066A06B /* Main */,
@@ -217,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				927EEEBA271ED9D700643DBE /* CALayer+.swift */,
+				92D5C7EB273675D100F07EE5 /* UIView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -311,8 +317,10 @@
 				9296D3DA271D5E69001B59EB /* NaviController.swift in Sources */,
 				9296D3C0271D5BC8001B59EB /* AppDelegate.swift in Sources */,
 				929C1A922727F81900741622 /* GroupListVC.swift in Sources */,
+				92D5C7EA2736724100F07EE5 /* OtherVC.swift in Sources */,
 				92572C292720710300719D54 /* CreateThunderVC.swift in Sources */,
 				9296D3C2271D5BC8001B59EB /* SceneDelegate.swift in Sources */,
+				92D5C7EC273675D100F07EE5 /* UIView+.swift in Sources */,
 				927EEEBB271ED9D700643DBE /* CALayer+.swift in Sources */,
 				929C1A972727FCDB00741622 /* CellDelegate.swift in Sources */,
 				9296D3D8271D5DB0001B59EB /* TabBarController.swift in Sources */,
