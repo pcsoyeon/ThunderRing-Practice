@@ -13,6 +13,12 @@
 		92D5C82927370FB000F07EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D5C82727370FB000F07EE5 /* Main.storyboard */; };
 		92D5C82B27370FB100F07EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D5C82A27370FB100F07EE5 /* Assets.xcassets */; };
 		92D5C82E27370FB100F07EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D5C82C27370FB100F07EE5 /* LaunchScreen.storyboard */; };
+		92D5C8372737114900F07EE5 /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D5C8352737114900F07EE5 /* ListTVC.swift */; };
+		92D5C8382737114900F07EE5 /* ListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D5C8362737114900F07EE5 /* ListTVC.xib */; };
+		92D5C83A273715F500F07EE5 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D5C839273715F500F07EE5 /* ChatVC.swift */; };
+		92D5C83C273716D400F07EE5 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D5C83B273716D400F07EE5 /* Chat.storyboard */; };
+		92D5C83F273719AB00F07EE5 /* ChatTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D5C83D273719AB00F07EE5 /* ChatTVC.swift */; };
+		92D5C840273719AB00F07EE5 /* ChatTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D5C83E273719AB00F07EE5 /* ChatTVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		92D5C82A27370FB100F07EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92D5C82D27370FB100F07EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92D5C82F27370FB100F07EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92D5C8352737114900F07EE5 /* ListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVC.swift; sourceTree = "<group>"; };
+		92D5C8362737114900F07EE5 /* ListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTVC.xib; sourceTree = "<group>"; };
+		92D5C839273715F500F07EE5 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		92D5C83B273716D400F07EE5 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		92D5C83D273719AB00F07EE5 /* ChatTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTVC.swift; sourceTree = "<group>"; };
+		92D5C83E273719AB00F07EE5 /* ChatTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,12 @@
 				92D5C82A27370FB100F07EE5 /* Assets.xcassets */,
 				92D5C82C27370FB100F07EE5 /* LaunchScreen.storyboard */,
 				92D5C82F27370FB100F07EE5 /* Info.plist */,
+				92D5C8352737114900F07EE5 /* ListTVC.swift */,
+				92D5C8362737114900F07EE5 /* ListTVC.xib */,
+				92D5C83B273716D400F07EE5 /* Chat.storyboard */,
+				92D5C839273715F500F07EE5 /* ChatVC.swift */,
+				92D5C83D273719AB00F07EE5 /* ChatTVC.swift */,
+				92D5C83E273719AB00F07EE5 /* ChatTVC.xib */,
 			);
 			path = ChatUI;
 			sourceTree = "<group>";
@@ -126,7 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				92D5C82E27370FB100F07EE5 /* LaunchScreen.storyboard in Resources */,
+				92D5C8382737114900F07EE5 /* ListTVC.xib in Resources */,
 				92D5C82B27370FB100F07EE5 /* Assets.xcassets in Resources */,
+				92D5C840273719AB00F07EE5 /* ChatTVC.xib in Resources */,
+				92D5C83C273716D400F07EE5 /* Chat.storyboard in Resources */,
 				92D5C82927370FB000F07EE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				92D5C82627370FB000F07EE5 /* ViewController.swift in Sources */,
+				92D5C83F273719AB00F07EE5 /* ChatTVC.swift in Sources */,
+				92D5C8372737114900F07EE5 /* ListTVC.swift in Sources */,
 				92D5C82227370FB000F07EE5 /* AppDelegate.swift in Sources */,
 				92D5C82427370FB000F07EE5 /* SceneDelegate.swift in Sources */,
+				92D5C83A273715F500F07EE5 /* ChatVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
