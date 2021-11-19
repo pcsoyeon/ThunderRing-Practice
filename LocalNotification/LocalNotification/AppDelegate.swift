@@ -66,7 +66,6 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
                 let navController = rootViewController as? UINavigationController{
                 
                 navController.pushViewController(secondVC, animated: true)
-                
             }
             
         }
