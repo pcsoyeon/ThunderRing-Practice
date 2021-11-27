@@ -9,33 +9,45 @@
 /* Begin PBXBuildFile section */
 		92D5C82227370FB000F07EE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D5C82127370FB000F07EE5 /* AppDelegate.swift */; };
 		92D5C82427370FB000F07EE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D5C82327370FB000F07EE5 /* SceneDelegate.swift */; };
-		92D5C82627370FB000F07EE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D5C82527370FB000F07EE5 /* ViewController.swift */; };
 		92D5C82927370FB000F07EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D5C82727370FB000F07EE5 /* Main.storyboard */; };
 		92D5C82B27370FB100F07EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D5C82A27370FB100F07EE5 /* Assets.xcassets */; };
 		92D5C82E27370FB100F07EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D5C82C27370FB100F07EE5 /* LaunchScreen.storyboard */; };
-		92D5C8372737114900F07EE5 /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D5C8352737114900F07EE5 /* ListTVC.swift */; };
-		92D5C8382737114900F07EE5 /* ListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D5C8362737114900F07EE5 /* ListTVC.xib */; };
-		92D5C83A273715F500F07EE5 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D5C839273715F500F07EE5 /* ChatVC.swift */; };
-		92D5C83C273716D400F07EE5 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D5C83B273716D400F07EE5 /* Chat.storyboard */; };
-		92D5C83F273719AB00F07EE5 /* ChatTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D5C83D273719AB00F07EE5 /* ChatTVC.swift */; };
-		92D5C840273719AB00F07EE5 /* ChatTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D5C83E273719AB00F07EE5 /* ChatTVC.xib */; };
+		92FB07BE2751D21C00A275A9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB07BD2751D21C00A275A9 /* MainVC.swift */; };
+		92FB07C12751D24D00A275A9 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 92FB07C02751D24D00A275A9 /* Then */; };
+		92FB07C42751D25B00A275A9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 92FB07C32751D25B00A275A9 /* SnapKit */; };
+		92FB07C82751D38400A275A9 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB07C72751D38400A275A9 /* BaseCell.swift */; };
+		92FB07CA2751D3C600A275A9 /* ChatHeaderCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB07C92751D3C600A275A9 /* ChatHeaderCVC.swift */; };
+		92FB07CC2751D3F500A275A9 /* BasePaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB07CB2751D3F500A275A9 /* BasePaddingLabel.swift */; };
+		92FB07CE2751D43F00A275A9 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB07CD2751D43F00A275A9 /* UILabel+.swift */; };
+		92FB07D02751D49000A275A9 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB07CF2751D49000A275A9 /* UIView+.swift */; };
+		92FB07D22751D4FE00A275A9 /* CounterpartChatCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB07D12751D4FE00A275A9 /* CounterpartChatCVC.swift */; };
+		92FB07D72751D5B100A275A9 /* MessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB07D62751D5B100A275A9 /* MessageData.swift */; };
+		92FB07D92751D5F500A275A9 /* MyChatCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB07D82751D5F500A275A9 /* MyChatCVC.swift */; };
+		92FB07DB2751D6E400A275A9 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB07DA2751D6E400A275A9 /* String+.swift */; };
+		92FB07DD2751D7CC00A275A9 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB07DC2751D7CC00A275A9 /* Identifiers.swift */; };
+		92FB07DF2751D96F00A275A9 /* Notification+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB07DE2751D96F00A275A9 /* Notification+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		92D5C81E27370FB000F07EE5 /* ChatUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D5C82127370FB000F07EE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92D5C82327370FB000F07EE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92D5C82527370FB000F07EE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		92D5C82827370FB000F07EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92D5C82A27370FB100F07EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92D5C82D27370FB100F07EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92D5C82F27370FB100F07EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92D5C8352737114900F07EE5 /* ListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVC.swift; sourceTree = "<group>"; };
-		92D5C8362737114900F07EE5 /* ListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTVC.xib; sourceTree = "<group>"; };
-		92D5C839273715F500F07EE5 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
-		92D5C83B273716D400F07EE5 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
-		92D5C83D273719AB00F07EE5 /* ChatTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTVC.swift; sourceTree = "<group>"; };
-		92D5C83E273719AB00F07EE5 /* ChatTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTVC.xib; sourceTree = "<group>"; };
+		92FB07BD2751D21C00A275A9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		92FB07C72751D38400A275A9 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		92FB07C92751D3C600A275A9 /* ChatHeaderCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHeaderCVC.swift; sourceTree = "<group>"; };
+		92FB07CB2751D3F500A275A9 /* BasePaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePaddingLabel.swift; sourceTree = "<group>"; };
+		92FB07CD2751D43F00A275A9 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		92FB07CF2751D49000A275A9 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		92FB07D12751D4FE00A275A9 /* CounterpartChatCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterpartChatCVC.swift; sourceTree = "<group>"; };
+		92FB07D62751D5B100A275A9 /* MessageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageData.swift; sourceTree = "<group>"; };
+		92FB07D82751D5F500A275A9 /* MyChatCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatCVC.swift; sourceTree = "<group>"; };
+		92FB07DA2751D6E400A275A9 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		92FB07DC2751D7CC00A275A9 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		92FB07DE2751D96F00A275A9 /* Notification+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92FB07C12751D24D00A275A9 /* Then in Frameworks */,
+				92FB07C42751D25B00A275A9 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +84,72 @@
 			children = (
 				92D5C82127370FB000F07EE5 /* AppDelegate.swift */,
 				92D5C82327370FB000F07EE5 /* SceneDelegate.swift */,
-				92D5C82527370FB000F07EE5 /* ViewController.swift */,
+				92D5C82F27370FB100F07EE5 /* Info.plist */,
+				92FB07E22751D9BC00A275A9 /* Resources */,
+				92FB07E12751D9B600A275A9 /* Sources */,
+			);
+			path = ChatUI;
+			sourceTree = "<group>";
+		};
+		92FB07D32751D50800A275A9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				92FB07C72751D38400A275A9 /* BaseCell.swift */,
+				92FB07CB2751D3F500A275A9 /* BasePaddingLabel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		92FB07D42751D51100A275A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				92FB07CD2751D43F00A275A9 /* UILabel+.swift */,
+				92FB07CF2751D49000A275A9 /* UIView+.swift */,
+				92FB07DA2751D6E400A275A9 /* String+.swift */,
+				92FB07DE2751D96F00A275A9 /* Notification+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		92FB07D52751D56200A275A9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				92FB07D62751D5B100A275A9 /* MessageData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		92FB07E02751D9A200A275A9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				92FB07C92751D3C600A275A9 /* ChatHeaderCVC.swift */,
+				92FB07D12751D4FE00A275A9 /* CounterpartChatCVC.swift */,
+				92FB07D82751D5F500A275A9 /* MyChatCVC.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		92FB07E12751D9B600A275A9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				92FB07BD2751D21C00A275A9 /* MainVC.swift */,
+				92FB07DC2751D7CC00A275A9 /* Identifiers.swift */,
+				92FB07E02751D9A200A275A9 /* Cells */,
+				92FB07D52751D56200A275A9 /* Data */,
+				92FB07D42751D51100A275A9 /* Extensions */,
+				92FB07D32751D50800A275A9 /* Base */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		92FB07E22751D9BC00A275A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				92D5C82727370FB000F07EE5 /* Main.storyboard */,
 				92D5C82A27370FB100F07EE5 /* Assets.xcassets */,
 				92D5C82C27370FB100F07EE5 /* LaunchScreen.storyboard */,
-				92D5C82F27370FB100F07EE5 /* Info.plist */,
-				92D5C8352737114900F07EE5 /* ListTVC.swift */,
-				92D5C8362737114900F07EE5 /* ListTVC.xib */,
-				92D5C83B273716D400F07EE5 /* Chat.storyboard */,
-				92D5C839273715F500F07EE5 /* ChatVC.swift */,
-				92D5C83D273719AB00F07EE5 /* ChatTVC.swift */,
-				92D5C83E273719AB00F07EE5 /* ChatTVC.xib */,
 			);
-			path = ChatUI;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +168,10 @@
 			dependencies = (
 			);
 			name = ChatUI;
+			packageProductDependencies = (
+				92FB07C02751D24D00A275A9 /* Then */,
+				92FB07C32751D25B00A275A9 /* SnapKit */,
+			);
 			productName = ChatUI;
 			productReference = 92D5C81E27370FB000F07EE5 /* ChatUI.app */;
 			productType = "com.apple.product-type.application";
@@ -129,6 +200,10 @@
 				Base,
 			);
 			mainGroup = 92D5C81527370FB000F07EE5;
+			packageReferences = (
+				92FB07BF2751D24C00A275A9 /* XCRemoteSwiftPackageReference "Then" */,
+				92FB07C22751D25B00A275A9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 92D5C81F27370FB000F07EE5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,10 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92D5C82E27370FB100F07EE5 /* LaunchScreen.storyboard in Resources */,
-				92D5C8382737114900F07EE5 /* ListTVC.xib in Resources */,
 				92D5C82B27370FB100F07EE5 /* Assets.xcassets in Resources */,
-				92D5C840273719AB00F07EE5 /* ChatTVC.xib in Resources */,
-				92D5C83C273716D400F07EE5 /* Chat.storyboard in Resources */,
 				92D5C82927370FB000F07EE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,12 +231,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92D5C82627370FB000F07EE5 /* ViewController.swift in Sources */,
-				92D5C83F273719AB00F07EE5 /* ChatTVC.swift in Sources */,
-				92D5C8372737114900F07EE5 /* ListTVC.swift in Sources */,
+				92FB07CA2751D3C600A275A9 /* ChatHeaderCVC.swift in Sources */,
+				92FB07CE2751D43F00A275A9 /* UILabel+.swift in Sources */,
+				92FB07CC2751D3F500A275A9 /* BasePaddingLabel.swift in Sources */,
+				92FB07BE2751D21C00A275A9 /* MainVC.swift in Sources */,
 				92D5C82227370FB000F07EE5 /* AppDelegate.swift in Sources */,
+				92FB07D92751D5F500A275A9 /* MyChatCVC.swift in Sources */,
+				92FB07DF2751D96F00A275A9 /* Notification+.swift in Sources */,
+				92FB07D72751D5B100A275A9 /* MessageData.swift in Sources */,
+				92FB07D22751D4FE00A275A9 /* CounterpartChatCVC.swift in Sources */,
+				92FB07D02751D49000A275A9 /* UIView+.swift in Sources */,
+				92FB07DD2751D7CC00A275A9 /* Identifiers.swift in Sources */,
+				92FB07C82751D38400A275A9 /* BaseCell.swift in Sources */,
+				92FB07DB2751D6E400A275A9 /* String+.swift in Sources */,
 				92D5C82427370FB000F07EE5 /* SceneDelegate.swift in Sources */,
-				92D5C83A273715F500F07EE5 /* ChatVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +464,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		92FB07BF2751D24C00A275A9 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		92FB07C22751D25B00A275A9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92FB07C02751D24D00A275A9 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92FB07BF2751D24C00A275A9 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		92FB07C32751D25B00A275A9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92FB07C22751D25B00A275A9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 92D5C81627370FB000F07EE5 /* Project object */;
 }
