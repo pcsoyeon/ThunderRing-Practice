@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 @IBDesignable
 class BasePaddingLabel: UILabel {
     var textEdgeInsets = UIEdgeInsets.zero {

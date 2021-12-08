@@ -23,9 +23,9 @@ class ViewController: UIViewController {
         }
         
         let button = UIButton(frame: CGRect(x: 20, y: 200, width: view.frame.size.width - 40, height: 50))
-        button.setTitle("", for: .normal)
+        button.setTitle("번개 보내기", for: .normal)
         button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .systemGray6
+        button.backgroundColor = .systemGray3
         view.addSubview(button)
         button.addTarget(self, action: #selector(addNewEntry), for: .touchUpInside)
     }
@@ -34,14 +34,14 @@ class ViewController: UIViewController {
     private func addNewEntry() {
         let object: [String : Any] = [
             "그룹" : "양파링걸즈" as NSObject,
-            "번개 이름" : "전통주마시자",
-            "번개 간단 소개" : "느린마을 막걸리, 알밤 막걸리 모두 다 환영",
-            "날짜" : "2021년 11월 28일",
-            "시간" : "오후 8시",
-            "장소" : "을지로 3가",
+            "번개 이름" : "오늘도 모각공",
+            "번개 간단 소개" : "캡스톤 회의",
+            "날짜" : "2021년 11월 30일",
+            "시간" : "오후 3시",
+            "장소" : "강남",
             "정원" : "2명~4명"
         ]
-        database.child("lightning1").setValue(object)
+        database.child("lightning3").setValue(object)
     }
 
 }
