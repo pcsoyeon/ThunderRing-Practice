@@ -14,7 +14,7 @@ extension String {
         }
         return nil
     }
-    // String값을 가지고 예상되는 frame크기를 return 하는 메소드
+    
     func getEstimatedFrame(with font: UIFont) -> CGRect {
         let size = CGSize(width: UIScreen.main.bounds.width * 2/3, height: 1000)
         let optionss = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)

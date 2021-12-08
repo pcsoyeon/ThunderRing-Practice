@@ -9,8 +9,6 @@ import UIKit
 
 extension UILabel {
     @IBInspectable
-    
-    /// 자간 조정
     var letterSpacing: CGFloat {
         set {
             let attributedString: NSMutableAttributedString
