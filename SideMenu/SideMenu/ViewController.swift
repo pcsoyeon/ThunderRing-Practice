@@ -19,6 +19,22 @@ class ViewController: UIViewController {
         return view
     }()
     
+    private lazy var editButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("채팅방 이름 변경하기", for: .normal)
+        button.setTitleColor(.systemGray, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    private lazy var exitButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("채팅방 나가기", for: .normal)
+        button.setTitleColor(.systemGray, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     private lazy var containerView: UIView = {
         let view = UIView()
         view.backgroundColor = .systemBackground
@@ -27,7 +43,7 @@ class ViewController: UIViewController {
     
     // MARK: - Properties
     
-    private lazy var slideInMenuPadding: CGFloat = self.view.frame.width * 0.30
+    private lazy var slideInMenuPadding: CGFloat = self.view.frame.width * 0.42
     private lazy var isSlideInMenuPresented = false
 
     // MARK: - Life Cycle
@@ -35,9 +51,30 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupLayout()
+        configUI()
+    }
+    
+    // MARK: - Set Up Methods
+    
+    private func setupLayout() {
+        [editButton, exitButton].forEach {
+            menuView.addSubview($0)
+        }
+        
+        NSLayoutConstraint.activate([
+            editButton.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 25),
+            editButton.topAnchor.constraint(equalTo: menuView.topAnchor, constant: 25),
+            
+            exitButton.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 25),
+            exitButton.topAnchor.constraint(equalTo: editButton.bottomAnchor, constant: 7)
+        ])
+    }
+    
+    private func configUI() {
         view.backgroundColor = .systemBackground
-        self.title = "Side Menu"
-        self.navigationItem.setRightBarButton(menuBarButtonItem, animated: false)
+        title = "Side Menu"
+        navigationItem.setRightBarButton(menuBarButtonItem, animated: false)
         
         menuView.pinMenuTo(view, with: slideInMenuPadding)
         containerView.edgeTo(view)
@@ -56,23 +93,4 @@ class ViewController: UIViewController {
     }
 }
 
-public extension UIView {
-    func edgeTo(_ view: UIView) {
-        view.addSubview(self)
-        self.translatesAutoresizingMaskIntoConstraints = false
-        self.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        self.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        self.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        self.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-    }
-    
-    func pinMenuTo(_ view: UIView, with constant: CGFloat) {
-        view.addSubview(self)
-        self.translatesAutoresizingMaskIntoConstraints = false
-        self.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        self.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: constant).isActive = true
-        self.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        self.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-    }
-}
 
