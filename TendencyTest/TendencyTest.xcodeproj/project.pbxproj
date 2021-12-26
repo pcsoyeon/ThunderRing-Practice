@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7010E0001C0D5D06E42D0CAD /* Pods_TendencyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F47F454FBBDE44CB3513CD /* Pods_TendencyTest.framework */; };
 		92671C2727724021006FD1EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92671C2627724021006FD1EC /* AppDelegate.swift */; };
 		92671C2927724021006FD1EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92671C2827724021006FD1EC /* SceneDelegate.swift */; };
 		92671C2B27724021006FD1EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92671C2A27724021006FD1EC /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F88AD2F7CC0D8884B53C28E /* Pods-TendencyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TendencyTest.debug.xcconfig"; path = "Target Support Files/Pods-TendencyTest/Pods-TendencyTest.debug.xcconfig"; sourceTree = "<group>"; };
+		526FD0C751A609ED44CBBD7A /* Pods-TendencyTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TendencyTest.release.xcconfig"; path = "Target Support Files/Pods-TendencyTest/Pods-TendencyTest.release.xcconfig"; sourceTree = "<group>"; };
 		92671C2327724021006FD1EC /* TendencyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TendencyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92671C2627724021006FD1EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92671C2827724021006FD1EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		92671C2F27724023006FD1EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92671C3227724023006FD1EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92671C3427724023006FD1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96F47F454FBBDE44CB3513CD /* Pods_TendencyTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TendencyTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7010E0001C0D5D06E42D0CAD /* Pods_TendencyTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0245FDE0EED663EFFF08AD5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F88AD2F7CC0D8884B53C28E /* Pods-TendencyTest.debug.xcconfig */,
+				526FD0C751A609ED44CBBD7A /* Pods-TendencyTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2B773A46C306238DC1CD2EE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96F47F454FBBDE44CB3513CD /* Pods_TendencyTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		92671C1A27724021006FD1EC = {
 			isa = PBXGroup;
 			children = (
 				92671C2527724021006FD1EC /* TendencyTest */,
 				92671C2427724021006FD1EC /* Products */,
+				0245FDE0EED663EFFF08AD5C /* Pods */,
+				2B773A46C306238DC1CD2EE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92671C3727724023006FD1EC /* Build configuration list for PBXNativeTarget "TendencyTest" */;
 			buildPhases = (
+				631D8DA7836B0A206CE8436B /* [CP] Check Pods Manifest.lock */,
 				92671C1F27724021006FD1EC /* Sources */,
 				92671C2027724021006FD1EC /* Frameworks */,
 				92671C2127724021006FD1EC /* Resources */,
+				E574C42E5EBD6521F3648542 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		631D8DA7836B0A206CE8436B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TendencyTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E574C42E5EBD6521F3648542 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TendencyTest/Pods-TendencyTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TendencyTest/Pods-TendencyTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TendencyTest/Pods-TendencyTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92671C1F27724021006FD1EC /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		92671C3827724023006FD1EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F88AD2F7CC0D8884B53C28E /* Pods-TendencyTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		92671C3927724023006FD1EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 526FD0C751A609ED44CBBD7A /* Pods-TendencyTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
