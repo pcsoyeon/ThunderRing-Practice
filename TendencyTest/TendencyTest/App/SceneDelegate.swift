@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  TendencyTest
 //
-//  Created by soyeon on 2021/12/22.
+//  Created by soyeon on 2021/12/26.
 //
 
 import UIKit
