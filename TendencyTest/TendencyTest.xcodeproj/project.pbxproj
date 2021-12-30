@@ -7,103 +7,133 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7010E0001C0D5D06E42D0CAD /* Pods_TendencyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F47F454FBBDE44CB3513CD /* Pods_TendencyTest.framework */; };
-		92671C2727724021006FD1EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92671C2627724021006FD1EC /* AppDelegate.swift */; };
-		92671C2927724021006FD1EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92671C2827724021006FD1EC /* SceneDelegate.swift */; };
-		92671C2B27724021006FD1EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92671C2A27724021006FD1EC /* ViewController.swift */; };
-		92671C2E27724021006FD1EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92671C2C27724021006FD1EC /* Main.storyboard */; };
-		92671C3027724023006FD1EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92671C2F27724023006FD1EC /* Assets.xcassets */; };
-		92671C3327724023006FD1EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92671C3127724023006FD1EC /* LaunchScreen.storyboard */; };
+		923087112778A2940059FF69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923087102778A2940059FF69 /* AppDelegate.swift */; };
+		923087132778A2940059FF69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923087122778A2940059FF69 /* SceneDelegate.swift */; };
+		923087152778A2940059FF69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923087142778A2940059FF69 /* ViewController.swift */; };
+		923087182778A2950059FF69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923087162778A2950059FF69 /* Main.storyboard */; };
+		9230871A2778A2960059FF69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923087192778A2960059FF69 /* Assets.xcassets */; };
+		9230871D2778A2960059FF69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9230871B2778A2960059FF69 /* LaunchScreen.storyboard */; };
+		923087282779DA320059FF69 /* AnswerTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923087272779DA320059FF69 /* AnswerTVC.swift */; };
+		9230872C2779DA530059FF69 /* TendencyDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9230872B2779DA530059FF69 /* TendencyDataModel.swift */; };
+		9230872F2779E1320059FF69 /* QuestionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9230872E2779E1320059FF69 /* QuestionTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F88AD2F7CC0D8884B53C28E /* Pods-TendencyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TendencyTest.debug.xcconfig"; path = "Target Support Files/Pods-TendencyTest/Pods-TendencyTest.debug.xcconfig"; sourceTree = "<group>"; };
-		526FD0C751A609ED44CBBD7A /* Pods-TendencyTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TendencyTest.release.xcconfig"; path = "Target Support Files/Pods-TendencyTest/Pods-TendencyTest.release.xcconfig"; sourceTree = "<group>"; };
-		92671C2327724021006FD1EC /* TendencyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TendencyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		92671C2627724021006FD1EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92671C2827724021006FD1EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92671C2A27724021006FD1EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		92671C2D27724021006FD1EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		92671C2F27724023006FD1EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		92671C3227724023006FD1EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		92671C3427724023006FD1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96F47F454FBBDE44CB3513CD /* Pods_TendencyTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TendencyTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9230870D2778A2940059FF69 /* TendencyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TendencyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		923087102778A2940059FF69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		923087122778A2940059FF69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		923087142778A2940059FF69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		923087172778A2950059FF69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		923087192778A2960059FF69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9230871C2778A2960059FF69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9230871E2778A2960059FF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		923087272779DA320059FF69 /* AnswerTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTVC.swift; sourceTree = "<group>"; };
+		9230872B2779DA530059FF69 /* TendencyDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TendencyDataModel.swift; sourceTree = "<group>"; };
+		9230872E2779E1320059FF69 /* QuestionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		92671C2027724021006FD1EC /* Frameworks */ = {
+		9230870A2778A2940059FF69 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7010E0001C0D5D06E42D0CAD /* Pods_TendencyTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0245FDE0EED663EFFF08AD5C /* Pods */ = {
+		923087042778A2940059FF69 = {
 			isa = PBXGroup;
 			children = (
-				2F88AD2F7CC0D8884B53C28E /* Pods-TendencyTest.debug.xcconfig */,
-				526FD0C751A609ED44CBBD7A /* Pods-TendencyTest.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		2B773A46C306238DC1CD2EE0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				96F47F454FBBDE44CB3513CD /* Pods_TendencyTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		92671C1A27724021006FD1EC = {
-			isa = PBXGroup;
-			children = (
-				92671C2527724021006FD1EC /* TendencyTest */,
-				92671C2427724021006FD1EC /* Products */,
-				0245FDE0EED663EFFF08AD5C /* Pods */,
-				2B773A46C306238DC1CD2EE0 /* Frameworks */,
+				9230870F2778A2940059FF69 /* TendencyTest */,
+				9230870E2778A2940059FF69 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		92671C2427724021006FD1EC /* Products */ = {
+		9230870E2778A2940059FF69 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92671C2327724021006FD1EC /* TendencyTest.app */,
+				9230870D2778A2940059FF69 /* TendencyTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		92671C2527724021006FD1EC /* TendencyTest */ = {
+		9230870F2778A2940059FF69 /* TendencyTest */ = {
 			isa = PBXGroup;
 			children = (
-				92671C2627724021006FD1EC /* AppDelegate.swift */,
-				92671C2827724021006FD1EC /* SceneDelegate.swift */,
-				92671C2A27724021006FD1EC /* ViewController.swift */,
-				92671C2C27724021006FD1EC /* Main.storyboard */,
-				92671C2F27724023006FD1EC /* Assets.xcassets */,
-				92671C3127724023006FD1EC /* LaunchScreen.storyboard */,
-				92671C3427724023006FD1EC /* Info.plist */,
+				9230871E2778A2960059FF69 /* Info.plist */,
+				923087242779D8D20059FF69 /* App */,
+				923087252779D8DD0059FF69 /* Resources */,
+				923087262779D8E90059FF69 /* Sources */,
 			);
 			path = TendencyTest;
+			sourceTree = "<group>";
+		};
+		923087242779D8D20059FF69 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				923087102778A2940059FF69 /* AppDelegate.swift */,
+				923087122778A2940059FF69 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		923087252779D8DD0059FF69 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				923087162778A2950059FF69 /* Main.storyboard */,
+				923087192778A2960059FF69 /* Assets.xcassets */,
+				9230871B2778A2960059FF69 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		923087262779D8E90059FF69 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9230872D2779DB530059FF69 /* Controllers */,
+				9230872A2779DA3C0059FF69 /* Models */,
+				923087292779DA360059FF69 /* Cells */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		923087292779DA360059FF69 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				923087272779DA320059FF69 /* AnswerTVC.swift */,
+				9230872E2779E1320059FF69 /* QuestionTVC.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9230872A2779DA3C0059FF69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9230872B2779DA530059FF69 /* TendencyDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9230872D2779DB530059FF69 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				923087142778A2940059FF69 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		92671C2227724021006FD1EC /* TendencyTest */ = {
+		9230870C2778A2940059FF69 /* TendencyTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92671C3727724023006FD1EC /* Build configuration list for PBXNativeTarget "TendencyTest" */;
+			buildConfigurationList = 923087212778A2960059FF69 /* Build configuration list for PBXNativeTarget "TendencyTest" */;
 			buildPhases = (
-				631D8DA7836B0A206CE8436B /* [CP] Check Pods Manifest.lock */,
-				92671C1F27724021006FD1EC /* Sources */,
-				92671C2027724021006FD1EC /* Frameworks */,
-				92671C2127724021006FD1EC /* Resources */,
-				E574C42E5EBD6521F3648542 /* [CP] Embed Pods Frameworks */,
+				923087092778A2940059FF69 /* Sources */,
+				9230870A2778A2940059FF69 /* Frameworks */,
+				9230870B2778A2940059FF69 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -111,25 +141,25 @@
 			);
 			name = TendencyTest;
 			productName = TendencyTest;
-			productReference = 92671C2327724021006FD1EC /* TendencyTest.app */;
+			productReference = 9230870D2778A2940059FF69 /* TendencyTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		92671C1B27724021006FD1EC /* Project object */ = {
+		923087052778A2940059FF69 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					92671C2227724021006FD1EC = {
+					9230870C2778A2940059FF69 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 92671C1E27724021006FD1EC /* Build configuration list for PBXProject "TendencyTest" */;
+			buildConfigurationList = 923087082778A2940059FF69 /* Build configuration list for PBXProject "TendencyTest" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -137,97 +167,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 92671C1A27724021006FD1EC;
-			productRefGroup = 92671C2427724021006FD1EC /* Products */;
+			mainGroup = 923087042778A2940059FF69;
+			productRefGroup = 9230870E2778A2940059FF69 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				92671C2227724021006FD1EC /* TendencyTest */,
+				9230870C2778A2940059FF69 /* TendencyTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		92671C2127724021006FD1EC /* Resources */ = {
+		9230870B2778A2940059FF69 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92671C3327724023006FD1EC /* LaunchScreen.storyboard in Resources */,
-				92671C3027724023006FD1EC /* Assets.xcassets in Resources */,
-				92671C2E27724021006FD1EC /* Main.storyboard in Resources */,
+				9230871D2778A2960059FF69 /* LaunchScreen.storyboard in Resources */,
+				9230871A2778A2960059FF69 /* Assets.xcassets in Resources */,
+				923087182778A2950059FF69 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		631D8DA7836B0A206CE8436B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TendencyTest-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E574C42E5EBD6521F3648542 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TendencyTest/Pods-TendencyTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TendencyTest/Pods-TendencyTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TendencyTest/Pods-TendencyTest-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		92671C1F27724021006FD1EC /* Sources */ = {
+		923087092778A2940059FF69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92671C2B27724021006FD1EC /* ViewController.swift in Sources */,
-				92671C2727724021006FD1EC /* AppDelegate.swift in Sources */,
-				92671C2927724021006FD1EC /* SceneDelegate.swift in Sources */,
+				923087152778A2940059FF69 /* ViewController.swift in Sources */,
+				9230872F2779E1320059FF69 /* QuestionTVC.swift in Sources */,
+				923087112778A2940059FF69 /* AppDelegate.swift in Sources */,
+				9230872C2779DA530059FF69 /* TendencyDataModel.swift in Sources */,
+				923087132778A2940059FF69 /* SceneDelegate.swift in Sources */,
+				923087282779DA320059FF69 /* AnswerTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		92671C2C27724021006FD1EC /* Main.storyboard */ = {
+		923087162778A2950059FF69 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				92671C2D27724021006FD1EC /* Base */,
+				923087172778A2950059FF69 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		92671C3127724023006FD1EC /* LaunchScreen.storyboard */ = {
+		9230871B2778A2960059FF69 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				92671C3227724023006FD1EC /* Base */,
+				9230871C2778A2960059FF69 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -235,7 +226,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		92671C3527724023006FD1EC /* Debug */ = {
+		9230871F2778A2960059FF69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -296,7 +287,7 @@
 			};
 			name = Debug;
 		};
-		92671C3627724023006FD1EC /* Release */ = {
+		923087202778A2960059FF69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -351,9 +342,8 @@
 			};
 			name = Release;
 		};
-		92671C3827724023006FD1EC /* Debug */ = {
+		923087222778A2960059FF69 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F88AD2F7CC0D8884B53C28E /* Pods-TendencyTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -380,9 +370,8 @@
 			};
 			name = Debug;
 		};
-		92671C3927724023006FD1EC /* Release */ = {
+		923087232778A2960059FF69 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 526FD0C751A609ED44CBBD7A /* Pods-TendencyTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -412,25 +401,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		92671C1E27724021006FD1EC /* Build configuration list for PBXProject "TendencyTest" */ = {
+		923087082778A2940059FF69 /* Build configuration list for PBXProject "TendencyTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92671C3527724023006FD1EC /* Debug */,
-				92671C3627724023006FD1EC /* Release */,
+				9230871F2778A2960059FF69 /* Debug */,
+				923087202778A2960059FF69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92671C3727724023006FD1EC /* Build configuration list for PBXNativeTarget "TendencyTest" */ = {
+		923087212778A2960059FF69 /* Build configuration list for PBXNativeTarget "TendencyTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92671C3827724023006FD1EC /* Debug */,
-				92671C3927724023006FD1EC /* Release */,
+				923087222778A2960059FF69 /* Debug */,
+				923087232778A2960059FF69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 92671C1B27724021006FD1EC /* Project object */;
+	rootObject = 923087052778A2940059FF69 /* Project object */;
 }
